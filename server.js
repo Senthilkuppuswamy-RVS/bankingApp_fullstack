@@ -144,5 +144,11 @@ app.get('/account/all', function (req, res) {
 
 
 app.listen(PORT, HOST, () => {
-    console.log(`Running on http://${HOST}:${PORT}`);
+    //console.log(`Running on http://${HOST}:${PORT}`);
 });
+
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+// });
+
+// app.listen(...)

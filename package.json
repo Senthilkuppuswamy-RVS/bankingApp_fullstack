@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "client": "cd client && npm start",
-    "start": "nodemon server.js",
-    "develop": "concurrently --kill-others-on-fail \"npm run start\" \"npm run client\""
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
